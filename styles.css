@@ -784,6 +784,27 @@ p { color: var(--ink); }
 .lead-form textarea { resize: vertical; min-height: 90px; }
 .form-fallback { text-align: center; font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
 .form-fallback a { color: var(--bordeaux); text-decoration: underline; }
+.form-status {
+  text-align: center;
+  font-size: 0.92rem;
+  margin-top: 4px;
+  min-height: 1.2em;
+}
+.form-status:empty { display: none; }
+.form-status-ok {
+  color: #1d7a36;
+  background: rgba(40, 200, 64, 0.08);
+  border: 1px solid rgba(40, 200, 64, 0.25);
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+.form-status-err {
+  color: #a02828;
+  background: rgba(160, 40, 40, 0.06);
+  border: 1px solid rgba(160, 40, 40, 0.22);
+  padding: 12px 14px;
+  border-radius: 10px;
+}
 
 /* ---------- FAQ ---------- */
 details {
